@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bouew2b4u2dxa"]
+
+[ext_resource type="Script" uid="uid://duge5wmm1e17r" path="res://scripts/menu/Main.cs" id="1_xdvgc"]
+[ext_resource type="Script" uid="uid://b4j6gv7jn0lky" path="res://scripts/menu/Buttons.cs" id="2_upctu"]
+
+[node name="Menu" type="Node2D" unique_id=1067724340]
+script = ExtResource("1_xdvgc")
+
+[node name="Buttons" type="CenterContainer" parent="." unique_id=699227725]
+offset_right = 1147.0
+offset_bottom = 638.0
+script = ExtResource("2_upctu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Buttons" unique_id=1707304188]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="Buttons/VBoxContainer" unique_id=1224248334]
+layout_mode = 2
+text = "Play"
+
+[node name="Settings" type="Button" parent="Buttons/VBoxContainer" unique_id=1494999666]
+layout_mode = 2
+text = "Settings
+"
+
+[node name="Info" type="Button" parent="Buttons/VBoxContainer" unique_id=1533688376]
+layout_mode = 2
+text = "Info"
+
+[node name="Exit" type="Button" parent="Buttons/VBoxContainer" unique_id=2136744609]
+layout_mode = 2
+text = "Exit"
+
+[connection signal="pressed" from="Buttons/VBoxContainer/Play" to="Buttons" method="_on_play_pressed"]
+[connection signal="pressed" from="Buttons/VBoxContainer/Exit" to="Buttons" method="_on_exit_pressed"]

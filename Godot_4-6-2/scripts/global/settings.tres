@@ -1,0 +1,14 @@
+[gd_resource type="JSON" format=3 uid="uid://d22whkl6rg651"]
+
+[resource]
+data = {
+"are_carriers_comming_from_other_nests": false,
+"chance_carrierspawn": 5,
+"maptiles_width": 10,
+"money_begin": 40,
+"price_acc": 50,
+"price_destroy": 10,
+"price_path": 10,
+"price_tower": 20,
+"pricefactor_repair": 2.0
+}
