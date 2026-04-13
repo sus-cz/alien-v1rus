@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bouew2b4u2dxa"]
 
-[ext_resource type="Script" uid="uid://duge5wmm1e17r" path="res://scripts/menu/Main.cs" id="1_xdvgc"]
+[ext_resource type="Script" uid="uid://duge5wmm1e17r" path="res://scripts/menu/Menu.cs" id="1_xdvgc"]
 [ext_resource type="Script" uid="uid://b4j6gv7jn0lky" path="res://scripts/menu/Buttons.cs" id="2_upctu"]
 
 [node name="Menu" type="Node2D" unique_id=1067724340]
