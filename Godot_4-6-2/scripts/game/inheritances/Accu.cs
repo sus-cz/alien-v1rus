@@ -1,8 +1,8 @@
 using Godot;
 using System;
 
-public partial class Path : Tile{
+public partial class Accu : Tile{
 	protected override void init(){
-		tile_type = TileType.PATH;
+		tile_type = TileType.ACCU;
 	}
 }

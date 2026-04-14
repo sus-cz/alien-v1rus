@@ -8,6 +8,10 @@ public partial class Tile : Node2D{
 	protected TileType tile_type;
 	[Export] protected Map map;
 	
+	public TileType get_type(){
+		return tile_type;
+	}
+	
 	public Vector2 get_size(){
 		return sprite.Size;
 	}
@@ -53,6 +57,6 @@ public partial class Tile : Node2D{
 	}
 	
 	protected virtual void handle_mouse(){
-		GD.Print("Tile clicked");
+		//...
 	}
 }

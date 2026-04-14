@@ -8,6 +8,7 @@ public partial class ShopMenu : CanvasLayer{
 	private Dictionary<TileType, Button> buttons = new Dictionary<TileType, Button>();
 	
 	private void get_buttons(){
+		buttons[TileType.EMPTY] = GetNode<Button>("Control/HBoxContainer/Movement");
 		buttons[TileType.PATH] = GetNode<Button>("Control/HBoxContainer/Path");
 		buttons[TileType.TOWER] = GetNode<Button>("Control/HBoxContainer/Tower");
 		buttons[TileType.ACCU] = GetNode<Button>("Control/HBoxContainer/Accu");
@@ -37,7 +38,6 @@ public partial class ShopMenu : CanvasLayer{
 		get_buttons();
 		add_functions_to_buttons();
 		disable_focus_on_buttons();
-	//GetNode<Button>("Control/ButtonPlay").Pressed += OnPlayPressed;
 	}
 	
 	

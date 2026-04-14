@@ -30,6 +30,10 @@ offset_right = 1152.0
 offset_bottom = 127.0
 alignment = 1
 
+[node name="Movement" type="Button" parent="ShopMenu/Control/HBoxContainer" unique_id=197856068]
+layout_mode = 2
+text = "Movement"
+
 [node name="Path" type="Button" parent="ShopMenu/Control/HBoxContainer" unique_id=1919486478]
 layout_mode = 2
 text = "Path"

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://02qyaswm4ivq"]
+
+[ext_resource type="PackedScene" uid="uid://c347pct6lwsrw" path="res://scenes/buildings/Tile.tscn" id="1_jjckp"]
+[ext_resource type="Script" uid="uid://y64ftv4m3f01" path="res://scripts/game/inheritances/Accu.cs" id="2_sn51b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sn51b"]
+bg_color = Color(0.74746513, 0.56789356, 0.19271874, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[node name="Accu" unique_id=1566587242 instance=ExtResource("1_jjckp")]
+script = ExtResource("2_sn51b")
+
+[node name="Sprite" parent="." index="0" unique_id=1379843075]
+theme_override_styles/panel = SubResource("StyleBoxFlat_sn51b")

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cp787nd1vbg6p"]
+
+[ext_resource type="PackedScene" uid="uid://c347pct6lwsrw" path="res://scenes/buildings/Tile.tscn" id="1_7h8fm"]
+[ext_resource type="Script" uid="uid://hq5m8hsqfn6p" path="res://scripts/game/inheritances/Tower.cs" id="2_k1ubo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k1ubo"]
+bg_color = Color(0.39557686, 0.23959935, 0.5315266, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[node name="Tower" unique_id=1566587242 instance=ExtResource("1_7h8fm")]
+script = ExtResource("2_k1ubo")
+
+[node name="Sprite" parent="." index="0" unique_id=1379843075]
+theme_override_styles/panel = SubResource("StyleBoxFlat_k1ubo")

@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://b3jyl5cchjce" path="res://scripts/game/inheritances/Path.cs" id="2_t27ru"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uacae"]
-bg_color = Color(0.54820323, 0.44895124, 0.3020883, 1)
+bg_color = Color(0.32444435, 0.3010697, 0.40118194, 1)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
