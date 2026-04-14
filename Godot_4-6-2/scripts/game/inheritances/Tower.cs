@@ -3,6 +3,10 @@ using System;
 
 public partial class Tower : Tile{
 	protected override void init(){
-		tile_type = TileType.TOWER;
+		hp = Config.DEF_HP_TOWER;
+	}
+	
+	public override TileType get_type(){
+		return TileType.TOWER;
 	}
 }

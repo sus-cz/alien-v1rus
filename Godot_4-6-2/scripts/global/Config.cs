@@ -1,6 +1,9 @@
 public static class Config{
+	//SCREEN
+	public static bool fullscreen=false;
+	
 	// GAME
-	public static float tile_size = 100f;
+	public const int TILE_SIZE = 100;
 	public static float camera_speed = 3f;
 	public static float camera_max_zoom_in = 0.5f;
 	public static float camera_max_zoom_out = 2.2f;
@@ -11,11 +14,17 @@ public static class Config{
 	public static bool are_carriers_comming_from_other_nests = false;
 	public static int chance_carrierspawn = 5;
 	
+	// BUILDINGS
+	public const int DEF_HP_TOWER = 1;
+	public const int DEF_HP_ACCU = 1;
+	public const int DEF_HP_HOME = 1;
+	public const int DEF_HP_NEST = 1;
+	
 	// MONEY
-	public static int money_begin = 40;
-	public static float pricefactor_repair = 2.0f;
-	public static int price_acc = 50;
-	public static int price_destroy = 10;
-	public static int price_path = 10;
-	public static int price_tower = 20;
+	public const int MONEY_BEGIN = 200;//40;
+	public const float PRICE_FACTOR_REPAIR = 2.0f;
+	public const int PRICE_ACCU = 50;
+	public const int PRICE_DESTROY = 10;
+	public const int PRICE_PATH = 10;
+	public const int PRICE_TOWER = 20;
 }

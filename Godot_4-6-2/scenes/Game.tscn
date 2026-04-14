@@ -1,16 +1,22 @@
 [gd_scene format=3 uid="uid://cafjg1qjomiid"]
 
+[ext_resource type="Script" uid="uid://bn0dxm7i3ybwn" path="res://scripts/game/Game.cs" id="1_s0nni"]
 [ext_resource type="Script" uid="uid://nenl2uo50dbo" path="res://scripts/game/Map.cs" id="2_qbsmt"]
 [ext_resource type="Script" uid="uid://0kqebpsteaud" path="res://scripts/game/ShopMenu.cs" id="3_78awf"]
 [ext_resource type="Script" uid="uid://cmf61iigase1w" path="res://scripts/game/PlayerCamera.cs" id="3_cpr0p"]
+[ext_resource type="Script" uid="uid://b2uku5dnrl81w" path="res://scripts/game/MoneyManager.cs" id="4_78awf"]
 
 [node name="Game" type="Node2D" unique_id=1102349984]
+script = ExtResource("1_s0nni")
 
 [node name="Map" type="Node2D" parent="." unique_id=1071582049]
 script = ExtResource("2_qbsmt")
 
 [node name="PlayerCamera" type="Camera2D" parent="." unique_id=651436592]
 script = ExtResource("3_cpr0p")
+
+[node name="Money" type="Node" parent="." unique_id=749439003]
+script = ExtResource("4_78awf")
 
 [node name="ShopMenu" type="CanvasLayer" parent="." unique_id=1472177300]
 script = ExtResource("3_78awf")
@@ -49,3 +55,15 @@ text = "Accu"
 [node name="Destroy" type="Button" parent="ShopMenu/Control/HBoxContainer" unique_id=412578659]
 layout_mode = 2
 text = "Destroy"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ShopMenu/Control" unique_id=15462747]
+layout_mode = 0
+offset_left = 1050.0
+offset_top = -521.0
+offset_right = 1152.0
+offset_bottom = -372.0
+mouse_filter = 2
+
+[node name="MoneyLabel" type="Label" parent="ShopMenu/Control/VBoxContainer" unique_id=661933293]
+layout_mode = 2
+text = "$ 0"

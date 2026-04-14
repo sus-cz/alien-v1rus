@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dufpb2hjdrxyw"]
 
 [ext_resource type="PackedScene" uid="uid://c347pct6lwsrw" path="res://scenes/buildings/Tile.tscn" id="1_ewfat"]
+[ext_resource type="Script" uid="uid://c5d0ecs2a1h44" path="res://scripts/game/inheritances/Home.cs" id="2_bwfov"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ewfat"]
 bg_color = Color(0.07343223, 0.43804285, 0.8635652, 1)
@@ -11,7 +12,7 @@ border_width_bottom = 1
 border_color = Color(0, 0, 0, 1)
 
 [node name="Home" unique_id=1566587242 instance=ExtResource("1_ewfat")]
-script = null
+script = ExtResource("2_bwfov")
 
 [node name="Sprite" parent="." index="0" unique_id=1379843075]
 theme_override_styles/panel = SubResource("StyleBoxFlat_ewfat")

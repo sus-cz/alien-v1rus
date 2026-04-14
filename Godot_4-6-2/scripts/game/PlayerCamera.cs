@@ -2,7 +2,7 @@ using Godot;
 using System;
 
 public partial class PlayerCamera : Camera2D{
-	private float speed = Config.tile_size * Config.camera_speed;
+	private float speed = Config.TILE_SIZE * Config.camera_speed;
 	private float speed_up_factor = 2f;
 	private float max_distance_x = 0, max_distance_y = 0;
 	

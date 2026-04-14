@@ -5,11 +5,11 @@ public partial class Tile : Node2D{
 	private Panel sprite;
 	private CollisionShape2D collision;
 	private Area2D area;
-	protected TileType tile_type;
-	[Export] protected Map map;
+	protected Map map;
+	protected int hp = 0;
 	
-	public TileType get_type(){
-		return tile_type;
+	public virtual TileType get_type(){
+		return TileType.EMPTY;
 	}
 	
 	public Vector2 get_size(){
@@ -25,11 +25,11 @@ public partial class Tile : Node2D{
 	
 	public void set_position(Vector2 position){
 		this.Position = position;
-		collision.Position = new Vector2(Config.tile_size/2,Config.tile_size/2);
+		collision.Position = new Vector2(Config.TILE_SIZE/2,Config.TILE_SIZE/2);
 	}
-	
+		
 	protected virtual void init(){
-		tile_type = TileType.EMPTY;
+		//..
 	}
 	
 	public override void _Ready(){
@@ -51,7 +51,7 @@ public partial class Tile : Node2D{
 		if (mouse_event != null && 
 			mouse_event.Pressed && 
 			mouse_event.ButtonIndex == MouseButton.Left){
-				map.set_selected_tile(this);
+				map.set_selected_tile_on_map(this);
 				handle_mouse();
 		}
 	}

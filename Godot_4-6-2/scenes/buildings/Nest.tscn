@@ -1,6 +1,18 @@
 [gd_scene format=3 uid="uid://3sltxdlmcfym"]
 
 [ext_resource type="PackedScene" uid="uid://c347pct6lwsrw" path="res://scenes/buildings/Tile.tscn" id="1_0ikqd"]
+[ext_resource type="Script" uid="uid://oxxxvhnfbs0f" path="res://scripts/game/inheritances/Nest.cs" id="2_mn7va"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mn7va"]
+bg_color = Color(0, 0.4957704, 0.08582846, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
 
 [node name="Nest" unique_id=1566587242 instance=ExtResource("1_0ikqd")]
-script = null
+script = ExtResource("2_mn7va")
+
+[node name="Sprite" parent="." index="0" unique_id=1379843075]
+theme_override_styles/panel = SubResource("StyleBoxFlat_mn7va")

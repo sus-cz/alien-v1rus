@@ -19,7 +19,7 @@ public partial class ShopMenu : CanvasLayer{
 		foreach(KeyValuePair<TileType, Button> pair in buttons){
 			TileType key = pair.Key;
 			Button button = pair.Value;
-			button.Pressed += () => {map.set_selected_building(key);};
+			button.Pressed += () => {map.set_tile_template(key);};
 		}
 	}
 	

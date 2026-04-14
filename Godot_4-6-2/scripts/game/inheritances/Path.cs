@@ -3,6 +3,9 @@ using System;
 
 public partial class Path : Tile{
 	protected override void init(){
-		tile_type = TileType.PATH;
+		//..
+	}
+	public override TileType get_type(){
+		return TileType.PATH;
 	}
 }
