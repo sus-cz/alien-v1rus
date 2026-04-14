@@ -2,9 +2,6 @@
 
 [ext_resource type="Script" uid="uid://gul7rwxwu8o1" path="res://scripts/game/Tile.cs" id="1_2sjy5"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2sjy5"]
-size = Vector2(99, 35)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2sjy5"]
 bg_color = Color(1, 1, 1, 1)
 border_width_left = 1
@@ -13,17 +10,19 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0, 0, 0, 1)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2sjy5"]
+
 [node name="Tile" type="Node2D" unique_id=1566587242]
 script = ExtResource("1_2sjy5")
-
-[node name="Area2D" type="Area2D" parent="." unique_id=1018890204]
-
-[node name="Collision2D" type="CollisionShape2D" parent="Area2D" unique_id=477465968]
-position = Vector2(49.5, 17.5)
-shape = SubResource("RectangleShape2D_2sjy5")
 
 [node name="Sprite" type="Panel" parent="." unique_id=1379843075]
 offset_right = 100.0
 offset_bottom = 100.0
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_2sjy5")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1018890204]
+
+[node name="Collision2D" type="CollisionShape2D" parent="Area2D" unique_id=477465968]
+position = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_2sjy5")

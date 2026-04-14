@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ced6i8u82cdms"]
+
+[ext_resource type="PackedScene" uid="uid://c347pct6lwsrw" path="res://scenes/buildings/Tile.tscn" id="1_58fn4"]
+[ext_resource type="Script" uid="uid://b3jyl5cchjce" path="res://scripts/game/inheritances/Path.cs" id="2_t27ru"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uacae"]
+bg_color = Color(0.54820323, 0.44895124, 0.3020883, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[node name="Path" unique_id=1566587242 instance=ExtResource("1_58fn4")]
+script = ExtResource("2_t27ru")
+
+[node name="Sprite" parent="." index="0" unique_id=1379843075]
+theme_override_styles/panel = SubResource("StyleBoxFlat_uacae")

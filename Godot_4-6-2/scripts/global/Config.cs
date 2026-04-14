@@ -2,6 +2,8 @@ public static class Config{
 	// GAME
 	public static float tile_size = 100f;
 	public static float camera_speed = 3f;
+	public static float camera_max_zoom_in = 0.5f;
+	public static float camera_max_zoom_out = 2.2f;
 	public static int maptiles_amount_x = 10;
 	public static int maptiles_amount_y = 10;
 	
