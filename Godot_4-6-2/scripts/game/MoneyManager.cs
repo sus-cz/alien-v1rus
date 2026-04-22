@@ -19,6 +19,7 @@ public partial class MoneyManager : Node{
 		prices[TileType.PATH] = Config.PRICE_PATH;
 		prices[TileType.TOWER] = Config.PRICE_TOWER;
 		prices[TileType.ACCU] = Config.PRICE_ACCU;
+		prices[TileType.DESTROYED] = Config.PRICE_DESTROY;
 	}
 	
 	private void update_label(){

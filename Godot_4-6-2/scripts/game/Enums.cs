@@ -1,8 +1,8 @@
 public enum TileType{
 	EMPTY,
-	DESTROYED,
 	NEST,
 	HOME,
+	DESTROYED,
 	PATH,
 	TOWER,
 	ACCU

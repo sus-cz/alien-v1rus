@@ -7,6 +7,17 @@ public partial class Tile : Node2D{
 	private Area2D area;
 	protected Map map;
 	protected int hp = 0;
+	protected bool is_tile_active=true;
+	
+	public virtual void activate(){
+		is_tile_active=true;
+		sprite.Modulate = new Color(1, 1, 1, 1f);
+	}
+	
+	public virtual void deactivate(){
+		is_tile_active=false;
+		sprite.Modulate = new Color(1, 1, 1, 0.5f);
+	}
 	
 	public virtual TileType get_type(){
 		return TileType.EMPTY;
@@ -33,7 +44,6 @@ public partial class Tile : Node2D{
 	}
 	
 	public override void _Ready(){
-		//map = (Map)GetNode<Node2D>("/root/Game/Map");
 		map = GetParent<Map>();
 		sprite = GetNode<Panel>("Sprite");
 		sprite.MouseFilter = Control.MouseFilterEnum.Ignore;
