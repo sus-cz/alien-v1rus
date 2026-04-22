@@ -9,7 +9,7 @@ public partial class MoneyManager : Node{
 	
 	public override void _Ready(){
 		money = Config.MONEY_BEGIN;
-		money_label = (Label)GetNode($"../ShopMenu/Control/VBoxContainer/MoneyLabel");
+		money_label = (Label)GetNode($"../ShopMenu/Items/StatusScreen/VBoxContainer/MoneyLabel");
 		money_label.AddThemeFontSizeOverride("font_size", 28);
 		load_prices();
 		update_label();
